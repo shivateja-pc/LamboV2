@@ -18,7 +18,7 @@ h1{
     background-color: lightgrey;
     font-style: italic;
     padding: 5px;
-    height: 95px;
+    height: 140x;
     margin: 5px; 
 }
 
@@ -119,3 +119,8 @@ a{
     transform: translateY(0);
   }
 }
+
+.text {
+  text-align: center;
+}
+
