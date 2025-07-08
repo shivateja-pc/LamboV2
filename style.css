@@ -62,7 +62,14 @@ a{
     font-weight: bold;
 }
 
-/* Below Need to be Understood #Mobile-friendly */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Below Need to be Understood #Mobile-friendly *//*
 @media (max-width: 768px) {
   #header {
     flex-direction: column;
@@ -99,13 +106,7 @@ a{
     padding: 12px;
   }
 }
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.3s;
-}
+*/
 
 /* New stuff need to be Understood */
 @keyframes fadeInUp {
@@ -118,6 +119,7 @@ a{
 .text {
   text-align: center;
 }
+
 
 /*Models Section Styles*/
 #models{
@@ -144,7 +146,6 @@ padding: 20px;
 text-align: center;
 box-shadow: 4px 4px 8px grey;
 transition: transform 0.3s ease;
-
 }
 
 .card img{
@@ -155,4 +156,16 @@ transition: transform 0.3s ease;
 
 .card:hover{
 transform: translateY(-10px);
+}
+
+/*Models Section Mobile Version */
+@media (max-width: 768px) {
+  .Model-Container{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card{
+    width: 90%;
+  }
 }
