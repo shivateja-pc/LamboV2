@@ -11,7 +11,7 @@
     background-color: lightgrey;
     font-style: italic;
     padding: 5px;
-    height: 140x;
+    height: 140px;
     margin: 5px; 
 }
 
@@ -69,7 +69,7 @@ a{
   animation-delay: 0.3s;
 }
 
-/* Below Need to be Understood #Mobile-friendly *//*
+/* Below Need to be Understood #Mobile-friendly that Sucks *//*
 @media (max-width: 768px) {
   #header {
     flex-direction: column;
@@ -108,7 +108,47 @@ a{
 }
 */
 
-/* New stuff need to be Understood */
+
+/*Upadated Mobile VErsion*/
+@media (max-width: 768px) {
+  /* Fix header layout */
+  #header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  /* Fix main car section */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .text p {
+    font-size: large;
+    text-align: center;
+  }
+
+  #footer {
+    padding: 10px;
+  }
+}
+
+/* Another New stuff need to be Understood */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -167,5 +207,6 @@ transform: translateY(-10px);
   
   .card{
     width: 90%;
+    margin-bottom: 15px;
   }
 }
