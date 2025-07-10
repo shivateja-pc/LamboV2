@@ -69,93 +69,6 @@ a{
   animation-delay: 0.3s;
 }
 
-/* Below Need to be Understood #Mobile-friendly that Sucks *//*
-@media (max-width: 768px) {
-  #header {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .button {
-    margin-top: 10px;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .image img {
-    width: 100%;
-  }
-
-  .text p {
-    font-size: large;
-    padding: 10px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 12px;
-  }
-}
-*/
-
-
-/*Upadated Mobile VErsion*/
-@media (max-width: 768px) {
-  /* Fix header layout */
-  #header {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .button {
-    margin-top: 10px;
-  }
-
-  /* Fix main car section */
-  .container {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .image img {
-    width: 100%;
-  }
-
-  .text p {
-    font-size: large;
-    text-align: center;
-  }
-
-  #footer {
-    padding: 10px;
-  }
-}
-
-/* Another New stuff need to be Understood */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .text {
   text-align: center;
 }
@@ -198,8 +111,119 @@ transition: transform 0.3s ease;
 transform: translateY(-10px);
 }
 
-/*Models Section Mobile Version */
-@media (max-width: 768px) {
+/* Gallery Page Styles */
+ .g-header{
+  background-color: #111;
+  color : yellow;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+ }
+ 
+ .g-nav{
+  display: flex;
+  gap: 20px;
+ }
+
+ .g-nav a{
+  color:yellow;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+ }
+
+ .g-nav a:hover{
+  color:orange;
+ }
+
+ .g-section{
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+ }
+
+ .g-grid{
+  grid-template-columns: repeat(auto-fit),minmax(250px,1fr);
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+ }
+
+ .g-grid img{
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  transition: filter 0.3s ease, transform 0.2s ease;
+ }
+
+ .g-grid img:hover{
+  transform: scale(1.05);
+  filter: brightness(1.2);
+ }
+
+ .g-footer{
+  background-color: #111;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+  font-size:  15px;
+ }
+
+ .g-footer a{
+  color: #f5c518;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+ }
+
+ .g-footer a:hover{
+  color: orange;
+ }
+
+/*Upadated Mobile VErsion
+@media (max-width: 500px) {
+  /* Fix header layout 
+  #header {
+    display:flex;
+    flex-direction:column;
+    gap: 15px;
+    text-align: center;
+  }
+/*
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  /* Fix main car section 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+/*
+  .image img {
+    width: 100%;
+  }
+
+  .text p {
+    font-size: large;
+    text-align: center;
+  }
+
+  #footer {
+    padding: 10px;
+  }
+
+  /*Models Section Mobile Version *//*
   .Model-Container{
     flex-direction: column;
     align-items: center;
@@ -208,5 +232,14 @@ transform: translateY(-10px);
   .card{
     width: 90%;
     margin-bottom: 15px;
+  } 
+} */
+
+
+/* Another New stuff need to be Understood */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
